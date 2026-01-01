@@ -50,7 +50,7 @@ const RegistrationForm: React.FC = () => {
       });
 
     } catch (error: any) {
-      toast.error( "Registration failed ");
+      toast.error(error.message || "Registration failed ");
     }
 
     setLoading(false);
